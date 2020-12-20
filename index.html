@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clarence's Portfolio</title>
+        <style>
+            @media (max-width: 500px) {
+                p {
+                    font-size: 32px;
+                }
+            }
+            #navbar {
+                background-color: #666666;
+                position: fixed;
+                display: block;
+                width: 100vw;
+                padding: 5px;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+            #welcome-section {
+                background-color:#AAAAAA;
+                color: #111111;
+                height: 100vh;
+                text-align: center;
+            }
+            #page-title {
+                padding-top: 40px;
+            }
+            #projects {
+                background-color: lightblue;
+                display: grid;
+                gap: 10px;
+                grid-template-columns: repeat(auto-fit, 250px);
+                padding: 10px;
+            }
+            .project-tile {
+                background-color: #666666;
+                border: solid;
+                text-align: center;
+                height: 250px;
+            }
+            body {
+                margin: 0;
+            }
+            a {
+                color: #E6ADD8;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav id="navbar">
+                <a href="#projects">Projects</a><br>
+                <a href="https://github.com/clarence-de-coder" id="profile-link" target="_blank">Git-Hub Profile</a>
+            </nav>
+        </header>
+        <main>
+            <div id="welcome-section">
+                <h1 id="page-title">Clarence's Portfolio</h1>
+                <p>This is my portfolio of projects.</p>
+            </div>
+            <div id="projects">
+                <div id="tribute-page-project" class="project-tile">
+                    <a href="https://clarence-de-coder.github.io/fcc_tribute_page/">Tribute Page</a>
+                </div>
+                <div id="survey-project" class="project-tile">
+                    <a href="https://clarence-de-coder.github.io/fcc_survery_page/">Survery Project</a>
+                </div>
+                <div id="landing-page-project" class="project-tile">
+                    <a href="https://clarence-de-coder.github.io/fcc_landing_page/">Landing Page</a>
+                </div>
+                <div id="technical-documentation-project" class="project-tile">
+                    <a href="https://clarence-de-coder.github.io/fcc_technical_documentation_page/">Technical Documentation</a>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
